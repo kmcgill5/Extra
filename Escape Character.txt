@@ -1,0 +1,19 @@
+:: Creating the Escape Character
+for /F %%A in ('echo prompt $E^| CMD') do set "ESC=%%A"
+
+:: The escape character
+
+
+:: Unicode Values
+U+001b >> 
+U+241b >> ␛
+U+2190 >> ←
+
+:: Alt Codes
+Alt + 27  (←)
+Alt + 027 ()
+
+:: Bit Values
+0001 1011 ()
+1110 0010 1001 0000 1001 1011 (␛)
+1110 0010 1000 0110 1001 0000 (←)

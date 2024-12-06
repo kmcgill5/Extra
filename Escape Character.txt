@@ -10,7 +10,7 @@
 | 	    | Data Control 3   | \023     | 13      | ␓	      |        | ‼	        |
 | 	    | Data Control 4   | \204     | 14      | ␔	      |        | ¶	        |
 | 	    | Data Link Escape | \020     | 10      | ␐	      |        | ┼	        |
-| 	    | Delete           | \177     | 7F      | ␡	      |        | 	          |
+| 	    | Delete           | \177     | 7F      | ␡	      |        | 	        |
 | 	    | End of Medium    | \031     | 19      | ␙	      |        | ├	        |
 | 	    | End of Text      | \003     | 03      | ␃	      |        | └	        |
 | 	    | End of Trans...  | \004     | 04      | ␄	      |        | ┘	        |
@@ -18,7 +18,7 @@
 | 	    | Enquiry          | \005     | 05      | ␅	      |        | │	        |
 | 	    | Escape           | \033     | 1B      | ␛	      |        | ←	        |
 | 	    | Negative Ack...  | \025     | 15      | ␕	      |        | ┴	        |
-| 	    | Shift In         | \017     | 0F      | ␏	      |        | ☼          |
+| 	    | Shift In         | \017     | 0F      | ␏	      |        | ☼              |
 | 	    | Shift Out        | \016     | 0E      | ␎	      |        | ♫	        |
 | 	    | Start of Heading | \001     | 01      | ␁	      |        | ┌	        |
 | 	    | Substitute       | \032     | 1A      | ␚	      |        | →	        |

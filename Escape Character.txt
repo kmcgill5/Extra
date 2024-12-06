@@ -1,19 +1,32 @@
+:: Control Character Table
+| Character |   Description    | Sequence | Unicode | Picture | Escape | Representation |
+|-----------|------------------|----------|---------|---------|--------|----------------|
+| 	        | Acknowledge      | \006     | 06      | ␆	      |        | ─	            |
+| 	        | Backspace        | \010     | 08      | ␈	      | \b     | ◘ 	            |
+| 	        | Bell             | \007     | 07      | ␇	      | \a     | ●	            |
+| 	        | Cancel           | \030     | 18      | ␘	      |        | ↑	            |
+| 	        | Data Control 1   | \021     | 11      | ␑	      |        | ◄	            |
+| 	        | Data Control 2   | \022     | 12      | ␒	      |        | ↕	            |
+| 	        | Data Control 3   | \023     | 13      | ␓	      |        | ‼	            |
+| 	        | Data Control 4   | \204     | 14      | ␔	      |        | ¶	            |
+| 	        | Data Link Escape | \020     | 10      | ␐	      |        | ┼	            |
+| 	        | Delete           | \177     | 7F      | ␡	      |        | 	              |
+| 	        | End of Medium    | \031     | 19      | ␙	      |        | ├	            |
+| 	        | End of Text      | \003     | 03      | ␃	      |        | └	            |
+| 	        | End of Trans...  | \004     | 04      | ␄	      |        | ┘	            |
+| 	        | E.O. Trans Block | \027     | 17      | ␗	      |        | ┤	            |
+| 	        | Enquiry          | \005     | 05      | ␅	      |        | │	            |
+| 	        | Escape           | \033     | 1B      | ␛	      |        | ←	            |
+| 	        | Negative Ack...  | \025     | 15      | ␕	      |        | ┴	            |
+| 	        | Shift In         | \017     | 0F      | ␏	      |        | ☼              |
+| 	        | Shift Out        | \016     | 0E      | ␎	      |        | ♫	            |
+| 	        | Start of Heading | \001     | 01      | ␁	      |        | ┌	            |
+| 	        | Substitute       | \032     | 1A      | ␚	      |        | →	            |
+| 	        | Synchronous      | \026     | 16      | ␖	      |        | ┬	            |
+| 	        | Vertical Tab     | \013     | 0B      | ␋	      | \v     | ♂	            |
+
 :: Creating the Escape Character
 for /F %%A in ('echo prompt $E^| CMD') do set "ESC=%%A"
 
-:: The escape character
-
-
-:: Unicode Values
-U+001b >> 
-U+241b >> ␛
-U+2190 >> ←
-
 :: Alt Codes
-Alt + 27  (←)
-Alt + 027 ()
-
-:: Bit Values
-0001 1011 ()
-1110 0010 1001 0000 1001 1011 (␛)
-1110 0010 1000 0110 1001 0000 (←)
+Alt + 027 >>  (Escape)
